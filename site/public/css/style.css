@@ -1,0 +1,55 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #2d2d2d;
+}
+
+.banner-principal{
+    position: relative;
+    background: url(../assets/PlanoDeFundo.jpg);
+    background-size: cover;
+    height: 600px;
+    overflow: hidden;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.container img{
+    margin: 0;
+    width: 350px;
+}
+
+.container h1 span{
+    border: 6px solid black;
+    padding: 6px 14px;
+    display: inline-block;
+}
+
+.sinopse{
+    margin: 20px;
+    display: block;
+    font-size: 16px;
+}
+
+.button{
+    color: #ededed;
+    padding: 10px 24px;
+    background: black;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: .6s;
+}
+
+.button:houver{
+    opacity: .6;
+}
