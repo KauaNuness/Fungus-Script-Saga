@@ -2,7 +2,7 @@
 
 ## Descrição
 
-**FungusScriptSaga Showcase** é uma página única dedicada à série "FungusScriptSaga". Este projeto proporciona uma experiência envolvente, apresentando informações sobre a série, locais para assistir, detalhes dos atores e destaques de cenas importantes.
+**FungusScriptSaga Showcase** é uma página única dedicada à série "The Last Of Us". Este projeto proporciona uma experiência envolvente, apresentando informações sobre a série, locais para assistir, detalhes dos atores e destaques de cenas importantes.
 
 ## Conteúdo
 
