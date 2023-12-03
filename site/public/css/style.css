@@ -7,101 +7,205 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body{
-    height: 100%;
-    background-color: #2d2d2d;
+body {
+  height: 100%;
+  background-color: #2d2d2d;
 }
 
-.banner-principal{
-    position: relative;
-    background: url(../assets/PlanoDeFundo.jpg);
-    background-size: cover;
-    height: 600px;
-    overflow: hidden;
+.banner-principal {
+  position: relative;
+  background: url(../assets/PlanoDeFundo.jpg);
+  background-size: cover;
+  height: 600px;
+  overflow: hidden;
 }
 
-.container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: black;
-    font-weight: 700;
-    text-transform: uppercase;
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.container img{
-    margin: 0;
-    width: 350px;
+.container img {
+  margin: 0;
+  width: 100%;
+  max-width: 350px; 
 }
 
-.container h1 span{
-    border: 6px solid black;
-    padding: 6px 14px;
-    display: inline-block;
+.container h1 span {
+  border: 6px solid black;
+  padding: 6px 14px;
+  display: inline-block;
 }
 
-.sinopse{
-    margin: 20px;
-    display: block;
-    font-size: 16px;
+.sinopse {
+  margin: 20px;
+  display: block;
+  font-size: 16px;
 }
 
-.button{
-    color: #ededed;
-    padding: 10px 24px;
-    background: black;
-    text-decoration: none;
-    border-radius: 12px;
-    transition: 0.6s ease;
+.button {
+  color: #ededed;
+  padding: 10px 24px;
+  background: black;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: 0.6s ease;
 }
 
-.button:hover{
-    opacity: 0.6;
-    background-color: red;
+.button:hover {
+  opacity: 0.6;
+  background-color: green;
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10%;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  width: 100px;
+}
+
+.navbar a {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: .3s;
+}
+
+.navbar a:hover {
+  color: green;
+}
+
+.container-curiosidades {
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  margin: 50px;
+  justify-content: space-between;
+}
+
+.container-curiosidades img {
+  width: 100%; 
+  max-width: 450px; 
+  border-radius: 20px;
+}
+
+.curiosidades-texto {
+  margin: 20px;
+  display: block;
+  font-size: 16px;
+}
+
+.video {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.container-footer{
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-container{
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.social-icons{
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: #ededed;
+  margin: 10px;
+  border-radius: 25%;
+}
+
+.social-icons a i{
+  font-size: 2em;
+  color: #121212;
+  opacity: 0.9;
+  
+}
+
+.social-icons a:hover{
+  background-color: green;
+  transition: 0.5s;
+}
+
+.video{
+  margin-bottom: 50px;
+}
+
+.footer{
+  margin: 30px;
+}
+
+.footer ul{
+  display: flex;
+  justify-content: center;
+}
+
+.footer ul li a{
+  color: #ededed;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.footer ul li a:hover{
+  color: green;
+}
+
+.footerBottom{
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.footerBottom{
+  color: #ededed;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
     align-items: center;
-    z-index: 100;
   }
-  
-  .logo {
-    width: 100px;
-  }
-  
+
   .navbar a {
-    font-size: 18px;
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-    margin-left: 35px;
-    transition: .3s;
-  }
-  
-  .navbar a:hover{
-    color: red;
+    margin: 10px 0;
   }
 
   .container-curiosidades {
-    margin: 50px;
+    flex-direction: column;
+    text-align: center;
   }
 
-  .container-curiosidades img{
-    width: 400px;
+  .container-curiosidades img {
+    margin-bottom: 20px;
   }
-
-  .curiosidades-texto{
-    margin: 20px;
-    display: block;
-    font-size: 16px;
-  }
+}
